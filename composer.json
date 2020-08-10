@@ -1,0 +1,14 @@
+{
+    "name": "sabenat/sbncommerce",
+    "description": "Simple CMS for Online Shop/eCommerce",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sabenat Digital Grup",
+            "email": "sabenatdigitalgrup@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^0.8.3"
+    }
+}
