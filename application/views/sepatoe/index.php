@@ -65,7 +65,7 @@
 	
 	<div class="container margin_60_35">
 		<div class="main_title">
-			<h2>Produk</h2>
+			<h2 style="color: #ce5959;">Produk</h2>
 			<!-- <span>Products</span>
 			<p>Cum doctus civibus efficiantur in imperdiet deterruisset</p> -->
 		</div>
@@ -79,7 +79,7 @@
 	            } else {
 	                $url_photo = base_url("img/622x800/$product->url_photo");
 	            }
-	        ?>
+	        ?>	
 			<div class="col-6 col-md-4 col-xl-3">
 				<div class="grid_item">
 					<figure>

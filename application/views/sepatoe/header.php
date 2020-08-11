@@ -174,10 +174,10 @@ $this->visitor->hit();
 						<li><a href="<?=base_url("page/$page->url_page");?>" class="parent"><?=$page->title_page;?></a> </li>
 
 						<?php } ?>
-						<li><a href="<?=base_url('tracking');?>" title="Status Pesanan">Shop</a></li>
-						<li><a href="<?=base_url();?>" title="Bantuan">What's New</a></li>
-						<li><a href="<?=base_url('home/contact');?>" title="Bantuan">Sale</a></li>
-						<li><a href="<?=base_url('home/contact');?>" title="Bantuan">News</a></li>
+						<li><a href="" title="Status Pesanan">Shop</a></li>
+						<li><a href="" title="Bantuan">What's New</a></li>
+						<li><a href="" title="Bantuan">Sale</a></li>
+						<li><a href="" title="Bantuan">News</a></li>
 					</ul>
 				</div>
 				<!-- <div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
@@ -198,6 +198,9 @@ $this->visitor->hit();
 								<div class="dropdown-menu cartul">
 									<ul>
 										<?php foreach($cart['data'] as $crt) { ?>
+										<!-- <li>
+											<a href="#0" class="wishlist"><span>Wishlist</span></a>
+										</li> -->
 										<li>
 											<a href="<?=$crt['photo'];?>">
 												<figure><img class="img-thumbnail" title="<?=$crt['name'];?>" alt="<?=$crt['name'];?>" src="<?=$crt['photo'];?>" style="max-width:30px"></figure>
@@ -209,7 +212,7 @@ $this->visitor->hit();
 								          }
 								          if(count($cart['data']) < 1) { 
 								        ?>
-								        <li style="text-align: center;margin-bottom: 12px" class="nullcart">Keranjang masih kosong</li>
+								        <li style="text-align: center;margin-bottom: 12px" class="cart">Keranjang masih kosong</li>
 
       									<?php } else { ?>
       										<div class="total_drop">
@@ -220,9 +223,6 @@ $this->visitor->hit();
 									</ul>
 								</div>
 							</div>
-						</li>
-						<li>
-							<a href="#0" class="wishlist"><span>Wishlist</span></a>
 						</li>
 						<li>
 							<div class="dropdown dropdown-access ">
