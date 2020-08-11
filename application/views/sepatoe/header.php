@@ -76,7 +76,11 @@ $this->visitor->hit();
 			<div class="row small-gutters" style="background-color: #303030"></div>
 			<div class="row small-gutters">
 				<div class="col-xl-3 col-lg-3 d-lg-flex align-items-center">
-					<div id="logo">
+					<div id="logo" style="padding: 4px;
+						margin-left: 500px;
+						height: 70px;
+						width: 120px;
+						margin-top: 20px;">
 						<a href="/"><img src="<?=base_url('assets/logo.png');?>" alt="" width="100" height="50"></a>
 					</div>
 				</div>
@@ -94,7 +98,7 @@ $this->visitor->hit();
 							<a href="<?= base_url(); ?>"><img src="<?=base_url();?>assets/vector/isolated-monochrome-black.svg" alt="" width="200" height="115"></a>
 							<a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
 						</div>
-						<ul>
+						<!-- <ul>
 							<li>
 								<a href="<?= base_url(); ?>" class="show-submenu">Home</a>
 							</li>
@@ -109,13 +113,13 @@ $this->visitor->hit();
 							<li><a href="<?=base_url();?>" title="Bantuan">What's New</a></li>
 							<li><a href="<?=base_url('home/contact');?>" title="Bantuan">Sale</a></li>
 							<li><a href="<?=base_url('home/contact');?>" title="Bantuan">News</a></li>
-						</ul>
+						</ul> -->
 					</div>
 					<!--/main-menu -->
 				</nav>
-				<div class="col-xl-3 col-lg-2 d-lg-flex align-items-center justify-content-end text-right">
+				<!-- <div class="col-xl-3 col-lg-2 d-lg-flex align-items-center justify-content-end text-right">
 					<a class="phone_top" href="tel://628123456789"><strong><span>Butuh Bantuan?</span>+62 123456789</strong></a>
-				</div>
+				</div> -->
 			</div>
 			<!-- /row -->
 		</div>
@@ -154,7 +158,29 @@ $this->visitor->hit();
 						</ul>
 					</nav>
 				</div>
-				<div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
+				<div class="main-menu">
+					<div id="header_menu">
+						<a href="<?= base_url(); ?>"><img src="<?=base_url();?>assets/vector/isolated-monochrome-black.svg" alt="" width="200" height="115"></a>
+						<a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
+					</div>
+					<ul>
+						<li>
+							<a href="<?= base_url(); ?>" class="show-submenu">Home</a>
+						</li>
+						<?php
+						foreach($pages as $page) {
+						?>
+
+						<li><a href="<?=base_url("page/$page->url_page");?>" class="parent"><?=$page->title_page;?></a> </li>
+
+						<?php } ?>
+						<li><a href="<?=base_url('tracking');?>" title="Status Pesanan">Shop</a></li>
+						<li><a href="<?=base_url();?>" title="Bantuan">What's New</a></li>
+						<li><a href="<?=base_url('home/contact');?>" title="Bantuan">Sale</a></li>
+						<li><a href="<?=base_url('home/contact');?>" title="Bantuan">News</a></li>
+					</ul>
+				</div>
+				<!-- <div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
 					<div class="custom-search-input">							
 						<form action="<?=base_url('index.php/search');?>" method="get">
 				          <input type="text" name="q" value="<?php if(isset($q)) echo $q;?>" placeholder="Tulis sesuatu...." class="form-control input-lg" />
@@ -163,7 +189,7 @@ $this->visitor->hit();
 				          </span>
 				         </form>
 					</div>
-				</div>
+				</div> -->
 				<div class="col-xl-3 col-lg-2 col-md-3">
 					<ul class="top_tools">
 						<li>

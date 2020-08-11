@@ -2683,11 +2683,11 @@ header.version_1 .main-menu > ul > li:hover > a {
 
 /*First level version 2 */
 header.version_2 .main-menu > ul > li > a, .main-menu > ul > li.submenu:hover > a {
-  color: #282828;
+  color: #fff;
 }
 
 header.version_2 .main-menu > ul > li:hover > a {
-  color: #004dda;
+  color: #7f8ba1;
 }
 
 header.version_2 .main-menu ul > li.submenu > a:after {

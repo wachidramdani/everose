@@ -45,18 +45,6 @@ unset($rowthumb[0]);
                     <p style="text-align: justify; text-justify: inter-word;"><?=nl2br($detail->description_product);?></p>
                     <div class="prod_options">
                         <div class="row">
-                            <label class="col-xl-5 col-lg-5  col-md-6 col-6"><strong>Warna</strong></label>
-                            <div class="col-xl-4 col-lg-5 col-md-6 col-6">
-                                <?=$detail->warna;?>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label class="col-xl-5 col-lg-5 col-md-6 col-6"><strong>Ukuran</label>
-                            <div class="col-xl-12 col-lg-5 col-md-6 col-6">
-                                <?=$detail->size;?>
-                            </div>
-                        </div>
-                        <div class="row">
                             <label class="col-xl-5 col-lg-5  col-md-6 col-6"><strong>Stok</strong></label>
                             <div class="col-xl-4 col-lg-5 col-md-6 col-6">
                                 <?=$detail->stock_product;?>
@@ -136,7 +124,7 @@ unset($rowthumb[0]);
                                     <p style="text-align: justify;"><?=nl2br($detail->description_product);?></p>
                                 </div>
                                 <div class="col-lg-5">
-                                    <h3 style="font-weight: bold;">Spesifikasi Produk</h3>
+                                    <h3 style="font-weight: bold;">Cara Pemakaian</h3>
                                     <p style="text-align: justify;"><?=nl2br($detail->description_product);?></p>
                                 </div>
                             </div>
